@@ -1,0 +1,105 @@
+APP STORE LISTING — HooldusR
+Character limits in brackets. Draft copy — edit freely.
+
+NAME [30]
+HooldusR
+
+SUBTITLE [30]
+Maintenance cutting survey
+(alternatives: "Forest maintenance cuttings" (27) / "Forest navigation & survey" (26))
+
+CATEGORY
+Primary:   Navigation
+Secondary: Utilities
+
+AGE RATING
+4+ — no objectionable content, no shared user-generated content, no web browsing.
+
+PROMOTIONAL TEXT [170]
+Remote sensing shows where maintenance cuttings may be due across Estonia.
+Navigate there, check the stand in situ, and record what you actually found.
+
+DESCRIPTION [4000]
+HooldusR is a forest navigation app for finding and verifying stands that may
+need maintenance cuttings. It is developed at Tartu Observatory, University of
+Tartu.
+
+The app draws a map layer derived from remote sensing data covering the whole
+territory of Estonia. The layer highlights places that should be checked on the
+ground for maintenance cutting. You navigate to a highlighted stand by GPS,
+inspect it in situ, and record what you found without leaving the map.
+
+MAP COLOURS
+Highlighted areas are coloured by the year the analysis was produced:
+• Red — produced up to 2023
+• Orange — area updated in 2024
+
+WHAT YOU RECORD
+At your exact position you save one of three values:
+• Correct — the stand does need a maintenance cutting, as the analysis indicated
+• Incorrect — the analysis flagged this stand, but no cutting is needed
+• Missing — a cutting is needed here, but the analysis did not flag it
+
+Each observation stores the date, your coordinates and an optional comment.
+
+IN THE FIELD
+• Live GPS position with coordinates shown to six decimal places
+• Standard or satellite base map, switched with one tap
+• Hide the analysis layer to read the base map underneath
+• Saved observations drawn on the map as green, red and yellow markers
+• Delete an observation recorded by mistake
+• Export the whole survey as a CSV file and send it from your phone
+
+YOUR DATA STAYS YOURS
+Observations are stored in a database on your device. Nothing is uploaded, there
+are no accounts, no analytics and no advertising. Your survey leaves the phone
+only when you export it and choose where to send it.
+
+COVERAGE
+The remote sensing layer covers the territory of Estonia. Elsewhere the app works
+as a plain map and will still record observations, but no analysis layer is drawn.
+
+HooldusR is the iOS companion to the Android app of the same name.
+
+KEYWORDS [100 total, comma-separated, no spaces after commas]
+metsandus,mets,hooldusraie,forestry,thinning,cutting,remote sensing,survey,GPS,Estonia
+(86 characters — room for one more short term if you want)
+
+SUPPORT URL
+(required — a page at ut.ee or a repository page works)
+
+MARKETING URL
+(optional)
+
+PRIVACY POLICY URL
+(required — host privacy-policy.md from this folder at a stable address)
+
+COPYRIGHT
+2026 University of Tartu, Tartu Observatory
+
+APP PRIVACY QUESTIONNAIRE
+"Do you or your third-party partners collect data from this app?" → NO,
+choose "Data Is Not Collected".
+
+Reasoning if queried: the app reads device location and writes it to a local
+file. Apple defines collection as transmitting data off the device. HooldusR
+transmits nothing; the CSV export is a user-initiated share, which Apple
+excludes from collection.
+
+EXPORT COMPLIANCE
+Already answered in the project (ITSAppUsesNonExemptEncryption = NO), because the
+app uses only operating-system HTTPS. You will not be asked on each upload.
+
+SCREENSHOTS NEEDED
+Required: 6.9" iPhone (1320 x 2868 or 1290 x 2796 portrait).
+Optional: 6.5" iPhone, and 13" iPad if iPad support stays on.
+
+Suggested five, taken on a real device over Estonian forest:
+1. The map with red and orange highlighted areas visible, coordinate strip showing
+2. The same view on the satellite base map
+3. The add-point sheet with a detection chosen and a comment typed
+4. Saved observations as green, red and yellow markers
+5. A marker callout open, ready to delete
+
+Frame shot 1 so BOTH red and orange areas are visible — it is the clearest way
+to show what the app is for at thumbnail size.

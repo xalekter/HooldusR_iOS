@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- HooldusR does no tracking and has no third-party SDKs. -->
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+
+	<!-- The GPS fix is written to a local SQLite file and never leaves the
+	     device. The only data that goes anywhere is the CSV the surveyor
+	     exports themselves through the share sheet, which Apple treats as a
+	     user action rather than collection. -->
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+
+	<!-- No required-reason APIs are used: no UserDefaults, no file timestamps,
+	     no disk space, boot time or active keyboard queries. -->
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array/>
+</dict>
+</plist>

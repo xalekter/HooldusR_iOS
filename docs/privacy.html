@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HooldusR · Privacy Policy</title>
+<meta name="description" content="Privacy policy for HooldusR, a forest navigation app for maintenance cuttings in Estonia.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --green: #079E3B;
+    --green-soft: #e8f6ed;
+    --ink: #16181c;
+    --muted: #5d646e;
+    --bg: #ffffff;
+    --card: #ffffff;
+    --line: #e4e7ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --green: #3ed177;
+      --green-soft: #12291b;
+      --ink: #e9ecef;
+      --muted: #9aa3ad;
+      --bg: #101215;
+      --card: #171a1f;
+      --line: #272b31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 72px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+
+  header { text-align: center; padding: 60px 0 36px; }
+  h1 { font-size: 2rem; letter-spacing: -.02em; margin: 0 0 6px; font-weight: 700; }
+  .tagline { color: var(--muted); margin: 0; font-size: 1rem; }
+
+  .highlight {
+    background: var(--green-soft);
+    border: 1px solid var(--green);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 8px 0 40px;
+  }
+  .highlight p { margin: 0; }
+  .highlight strong { color: var(--green); }
+
+  h2 {
+    font-size: 1.16rem; font-weight: 650;
+    margin: 38px 0 12px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--green); }
+  .note { color: var(--muted); font-size: .95rem; }
+
+  footer {
+    margin-top: 56px; padding-top: 24px;
+    border-top: 1px solid var(--line);
+    text-align: center; color: var(--muted); font-size: .92rem;
+  }
+  footer a { text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  footer .org { display: block; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="tagline">HooldusR · Last updated: September 2026</p>
+  </header>
+
+  <div class="highlight">
+    <p>HooldusR does <strong>not collect your personal data</strong>. Your position and every observation you record stay on your iPhone. There are no accounts, no analytics, no advertising and no third-party SDKs.</p>
+  </div>
+
+  <h2>1. Information We Collect</h2>
+  <p>The app stores the following <strong>locally on your device only</strong>:</p>
+  <ul>
+    <li>The date and time of each observation you save</li>
+    <li>The detection value you choose: Correct, Incorrect or Missing</li>
+    <li>The latitude and longitude of your position when you save the observation</li>
+    <li>Any comment you type</li>
+  </ul>
+  <p>This is kept in a local database file inside the app's own storage. It is not sent to any server, cloud service or third party.</p>
+
+  <h2>2. Device Permissions</h2>
+  <ul>
+    <li><strong>Location (When In Use)</strong> — used to show your position on the map and to record the coordinates of each observation. The app does not use location in the background.</li>
+  </ul>
+  <p>Location is the only permission HooldusR requests. It does not use the camera, the microphone, your contacts, your photo library or your health data.</p>
+  <p class="note">You can change or revoke location access at any time in Settings → HooldusR. Revoking it leaves the map usable, but the app will no longer be able to save observations, because an observation is defined by its position.</p>
+
+  <h2>3. Map Data and Network Requests</h2>
+  <p>The coloured forest layer is not stored in the app. It is requested as map images from a map server operated by the project at <code>nutriloopworks.to.ee</code>, and base map data is provided by Apple Maps.</p>
+  <p>These requests describe the geographic area currently on screen. They do not carry your identity, any account details, or any of your saved observations. However, because the map can follow your position, the area requested may correspond to where you are, and the server's access logs may record the requesting IP address, as is standard for any web server. No attempt is made to identify users from this.</p>
+  <p>Base map data from Apple is covered by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+  <h2>4. Data Sharing</h2>
+  <p>We do not share your data with anyone, because we do not have it. The app contains no advertising SDKs, no analytics frameworks and no crash reporting services.</p>
+  <p>Choosing <em>Save as *.csv</em> creates a file in the app's Documents folder and passes it to the standard iOS share sheet. What happens to it next is entirely your choice. Whatever service you send it to — mail, a cloud drive, another app — is governed by that service's own privacy policy, not ours.</p>
+
+  <h2>5. Data Retention and Deletion</h2>
+  <p>Observations stay on your device until you remove them. You can delete an individual observation from the map: enable <em>Show points</em>, tap a marker, tap the detail button in its callout, and confirm.</p>
+  <p>Deleting the app from your iPhone permanently removes the database and every observation in it. Because nothing is uploaded, there is no server-side copy to request or erase.</p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>HooldusR is a professional forestry tool. It is not directed at children, and it knowingly collects no information from anyone, including children.</p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>If this policy changes, the updated version will be published at this same address with a revised date at the top of the page.</p>
+
+  <h2>8. Contact</h2>
+  <p>Questions about this policy or about the app can be sent to <a href="mailto:forestmapua@gmail.com?subject=HooldusR%20privacy">forestmapua@gmail.com</a>.</p>
+  <p class="note">HooldusR is developed at Tartu Observatory, University of Tartu, Estonia.</p>
+
+  <footer>
+    © 2026 HooldusR · <a href="index.html">Support</a>
+    <span class="org">Tartu Observatory, University of Tartu</span>
+  </footer>
+
+</div>
+</body>
+</html>

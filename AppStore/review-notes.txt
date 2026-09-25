@@ -1,0 +1,53 @@
+APP REVIEW NOTES — HooldusR
+Paste into App Store Connect > your version > App Review Information > Notes.
+No sign-in or demo account is required.
+
+WHAT THE APP IS
+HooldusR is a forest navigation tool made by Tartu Observatory (University of
+Tartu). It displays a map layer derived from remote sensing data that highlights
+forest stands which should be inspected on the ground for maintenance cuttings.
+A forester navigates to a highlighted stand by GPS, checks it in person, and
+records whether the analysis was right.
+
+IMPORTANT — THE MAP LAYER COVERS ESTONIA ONLY
+The coloured overlay is served from a map server holding remote sensing analysis
+for the territory of Estonia. Outside Estonia the app correctly shows Apple's
+base map with no overlay on top. This is expected behaviour, not a bug or an
+unfinished feature.
+
+To see the overlay, please pan the map to Estonia, for example:
+    latitude 58.30, longitude 26.51   (near Tartu, Estonia)
+Zoom out one or two steps after arriving and the coloured areas become obvious.
+A screenshot of the expected result is attached to this submission.
+
+WHAT THE COLOURS MEAN
+Red    — analysis produced up to 2023
+Orange — area updated in 2024
+
+HOW TO EXERCISE EVERY FEATURE
+1. Allow location when prompted. Current coordinates appear in the black strip
+   at the bottom of the screen.
+2. Tap the location arrow (far left) to centre the map on your position.
+3. Tap the tree icon to hide and show the analysis layer.
+4. Tap the globe/map icon to switch between standard and satellite base maps.
+5. Tap "+" to record an observation. Choose Correct, Incorrect or Missing, add
+   an optional comment, tap Save. The observation is stored locally at your
+   current coordinates.
+6. Open the "..." menu and enable "Show points" to draw saved observations as
+   coloured markers. Tap a marker, then the blue detail button in its callout,
+   to delete it.
+7. Open the "..." menu and choose "Save as *.csv" to export every observation
+   through the standard iOS share sheet.
+
+WHY LOCATION IS REQUIRED
+Location is the core of the app. Each observation is a geographic point recorded
+where the forester is standing, and the map follows their position as they walk
+to a highlighted stand. The Save button stays disabled without a GPS fix.
+Location is used only while the app is in use; there is no background use.
+
+PRIVACY
+All observations are stored in a local SQLite file in the app's own Documents
+directory. Nothing is uploaded. There are no accounts, analytics, advertising or
+third-party SDKs. The only outbound requests fetch map tiles from
+https://nutriloopworks.to.ee and carry no personal data. The CSV export leaves
+the device only if the user chooses to share it.

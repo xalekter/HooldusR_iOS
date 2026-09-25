@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HooldusR · Support</title>
+<meta name="description" content="Support page for HooldusR, a forest navigation app for locating and verifying maintenance cuttings in Estonia.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --green: #079E3B;
+    --green-soft: #e8f6ed;
+    --ink: #16181c;
+    --muted: #5d646e;
+    --bg: #ffffff;
+    --card: #ffffff;
+    --line: #e4e7ec;
+    --red: #c0392b;
+    --orange: #e67e22;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --green: #3ed177;
+      --green-soft: #12291b;
+      --ink: #e9ecef;
+      --muted: #9aa3ad;
+      --bg: #101215;
+      --card: #171a1f;
+      --line: #272b31;
+      --red: #e86a5c;
+      --orange: #f0a35a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 72px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+
+  header { text-align: center; padding: 64px 0 48px; }
+  header img {
+    width: 104px; height: 104px;
+    border-radius: 23%;
+    box-shadow: 0 6px 20px rgba(0,0,0,.18);
+  }
+  h1 {
+    font-size: 2.1rem; letter-spacing: -.02em;
+    margin: 22px 0 6px; font-weight: 700;
+  }
+  .tagline { color: var(--muted); margin: 0; font-size: 1.02rem; }
+
+  h2 {
+    font-size: 1.05rem; text-transform: uppercase; letter-spacing: .07em;
+    color: var(--muted); font-weight: 600;
+    margin: 48px 0 16px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .card .icon { font-size: 1.7rem; line-height: 1; display: block; margin-bottom: 10px; }
+  .card h3 { margin: 0 0 8px; font-size: 1.08rem; font-weight: 650; }
+  .card p { margin: 0 0 10px; color: var(--ink); }
+  .card p:last-child { margin-bottom: 0; }
+  .card p.note { color: var(--muted); font-size: .94rem; }
+
+  .legend { list-style: none; padding: 0; margin: 12px 0 0; }
+  .legend li { display: flex; align-items: center; gap: 12px; margin-bottom: 9px; }
+  .legend li:last-child { margin-bottom: 0; }
+  .swatch {
+    width: 22px; height: 22px; border-radius: 6px; flex: none;
+    border: 1px solid rgba(0,0,0,.18);
+  }
+  .swatch.red { background: var(--red); }
+  .swatch.orange { background: var(--orange); }
+
+  .cta {
+    display: inline-block; margin-top: 6px;
+    background: var(--green); color: #fff;
+    text-decoration: none; font-weight: 600;
+    padding: 12px 22px; border-radius: 10px;
+  }
+  .cta:hover { filter: brightness(1.07); }
+
+  footer {
+    margin-top: 56px; padding-top: 24px;
+    border-top: 1px solid var(--line);
+    text-align: center; color: var(--muted); font-size: .92rem;
+  }
+  footer a { color: var(--green); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  footer .org { display: block; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="icon.png" alt="HooldusR app icon">
+    <h1>HooldusR</h1>
+    <p class="tagline">Forest Navigation · Maintenance Cuttings · Support</p>
+  </header>
+
+  <h2>About</h2>
+
+  <div class="card">
+    <span class="icon">🌲</span>
+    <h3>What does HooldusR do?</h3>
+    <p>HooldusR is a forest navigation app. It draws a map layer derived from remote sensing data covering the whole territory of Estonia, highlighting stands that should be checked on the ground for maintenance cuttings.</p>
+    <p>You navigate to a highlighted stand by GPS, inspect it in person, and record what you actually found — without leaving the map.</p>
+  </div>
+
+  <div class="card">
+    <span class="icon">🎨</span>
+    <h3>What do the colours on the map mean?</h3>
+    <p>Highlighted areas are coloured by the year the analysis was produced:</p>
+    <ul class="legend">
+      <li><span class="swatch red"></span> Red — produced up to 2023</li>
+      <li><span class="swatch orange"></span> Orange — area updated in 2024</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <span class="icon">✅</span>
+    <h3>What do Correct, Incorrect and Missing mean?</h3>
+    <p><strong>Correct</strong> — the stand does need a maintenance cutting, as the analysis indicated.</p>
+    <p><strong>Incorrect</strong> — the analysis flagged this stand, but no cutting is needed.</p>
+    <p><strong>Missing</strong> — a cutting is needed here, but the analysis did not flag it.</p>
+  </div>
+
+  <div class="card">
+    <span class="icon">📍</span>
+    <h3>Why does the app ask for location?</h3>
+    <p>Location is the core of the app. The map follows your position as you walk to a highlighted stand, and every observation you save is recorded at the exact coordinates where you are standing.</p>
+    <p class="note">Location is used only while the app is open. It is stored on your device and never sent to us.</p>
+  </div>
+
+  <div class="card">
+    <span class="icon">💾</span>
+    <h3>Where is my data stored?</h3>
+    <p>Every observation is written to a database inside the app's own storage on your iPhone. Nothing is uploaded — there are no accounts, no analytics and no advertising.</p>
+    <p>You can export the whole survey as a CSV file whenever you like, and send it wherever you choose.</p>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="card">
+    <span class="icon">🗺</span>
+    <h3>The coloured layer is not showing</h3>
+    <p>Three things to check. First, the layer covers the territory of Estonia only — outside Estonia the app works as a plain map, which is expected. Second, the tree icon in the top bar hides and shows the layer; tap it once to bring the layer back. Third, the layer is downloaded from a map server, so it needs a network connection the first time you view an area.</p>
+  </div>
+
+  <div class="card">
+    <span class="icon">📍</span>
+    <h3>The Save button is greyed out</h3>
+    <p>An observation needs a GPS fix, because it has to be recorded at a real position. Check that the coordinates in the black strip at the bottom of the screen are showing real numbers rather than 00.000000, and that location access is allowed in Settings → HooldusR.</p>
+  </div>
+
+  <div class="card">
+    <span class="icon">📂</span>
+    <h3>Where do exported CSV files go?</h3>
+    <p>Choose <em>Save as *.csv</em> from the <strong>⋯</strong> menu. The file is created in the app's Documents folder — reachable in the Files app under HooldusR — and handed straight to the iOS share sheet, so you can mail it, drop it in a cloud folder, or AirDrop it to a laptop.</p>
+    <p class="note">Each export is timestamped, so a new one never overwrites an earlier one.</p>
+  </div>
+
+  <div class="card">
+    <span class="icon">🗑</span>
+    <h3>Can I remove an observation I recorded by mistake?</h3>
+    <p>Yes. Open the <strong>⋯</strong> menu and turn on <em>Show points</em> to draw your saved observations on the map. Tap the marker you want to remove, then tap the blue detail button in its callout, and confirm.</p>
+  </div>
+
+  <div class="card">
+    <span class="icon">🛰</span>
+    <h3>Can I use the satellite view?</h3>
+    <p>Yes — the globe icon in the top bar switches between the standard map and satellite imagery. The coloured layer draws over both. Satellite view helps when compartment boundaries are hard to read on the ground.</p>
+  </div>
+
+  <h2>Contact</h2>
+
+  <div class="card">
+    <span class="icon">✉️</span>
+    <h3>Get in touch</h3>
+    <p>Bug reports, feature requests, or questions about the data behind the map are all welcome. We aim to respond within a few business days.</p>
+    <a class="cta" href="mailto:forestmapua@gmail.com?subject=HooldusR%20iOS">Email Support</a>
+  </div>
+
+  <footer>
+    © 2026 HooldusR · <a href="privacy.html">Privacy Policy</a>
+    <span class="org">Tartu Observatory, University of Tartu</span>
+  </footer>
+
+</div>
+</body>
+</html>
